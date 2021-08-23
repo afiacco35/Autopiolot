@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js"></script>
+    <title>Autopilot</title>
+  </head>
+  <body class="bg-image">
+    <div class="intro">
+      <h1>AUTOPILOT</h1>
+      <h2>Wild Bird Rehabilitation's online bookeeping system</h2>
+    </div>
+
+    <section>
+      <form
+        class="form-box"
+        method="POST"
+        onsubmit="return checkPassword();  return false;"
+      >
+        <fieldset class="section-login">
+          <legend>Autopilot</legend>
+          <label for="password">Secret Code</label>
+          <div class="inputcontent">
+            <input
+              type="password"
+              id="password"
+              placeholder="Staff Access Only"
+            /><br />
+          </div>
+
+          <div class="buttons">
+            <input class="loginbutton" type="submit" value="Login" />
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <!--<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-f898f3d5-b52e-4e96-b1f4-6bf92036c425"></div>-->
+
+    <div class="color-overlay"></div>
+  </body>
+</html>

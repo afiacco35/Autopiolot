@@ -1,0 +1,118 @@
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: vh;
+  width: vw;
+}
+.bg-image {
+  background-image: url("https://johnjames.audubon.org/sites/default/files/styles/bean_wysiwyg_full_width/public/pelican_1.jpg?itok=IIuj3don");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 1;
+  z-index: 1;
+}
+@media (max-width: 450px) {
+  .bg-image {
+    background-image: url("https://www.audubon.org/sites/default/files/styles/boa_plate_thumbnail/public/boa_plates/plate-25-song-sparrow.jpg?itok=tnuPvLQv");
+  }
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    #810404,
+    #84032b,
+    #7c1b48,
+    #6c2f5c,
+    #593d67,
+    #624168,
+    #6b4568,
+    #734969,
+    #904a5a,
+    #9c5542,
+    #956a2c,
+    #798129
+  );
+  opacity: 0.2;
+  position: absolute;
+  z-index: 2;
+}
+.intro {
+  margin: 50px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (max-width: 450px) {
+  .intro {
+    margin: 10px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: none;
+    width: 500px;
+  }
+}
+
+h1 {
+  line-height: 10px;
+  font-size: 50px;
+  text-decoration: underline;
+}
+@media (max-width: 450px) {
+  h1 {
+    position: relative;
+    z-index: 23;
+    line-height: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+}
+h2 {
+  position: relative;
+  z-index: 23;
+  font-style: italic;
+}
+@media (max-width: 450px) {
+  h2 {
+    font-size: 13px;
+  }
+}
+.section-login {
+  z-index: 22;
+}
+
+.form-box {
+  font-size: 30px;
+  padding-top: 10%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 21;
+  /* I want to hover on login and have just a form asking for a password to to come down and then if the user types the password right then it takes you into the " white sheet" records. Staff can then fill out the white sheets online and papers don't get lost, shat on, ect.
+  I want buttons to move different files to different areas that that corrispond to the hospital (Incubator, AR, Nursury, Recover, DOA, DIC, Euthanasia, Released, Aviary*/
+}
+.elfsight-app-f898f3d5-b52e-4e96-b1f4-6bf92036c425 {
+  display: flex;
+  padding: 2%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 40%;
+}
+@media (min-width: 450px) {
+  elfsight-app-f898f3d5-b52e-4e96-b1f4-6bf92036c425 {
+  }
+}
+
+a {
+  position: relative;
+  z-index: 3;
+}
